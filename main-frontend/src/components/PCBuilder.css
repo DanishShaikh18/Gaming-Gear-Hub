@@ -1,0 +1,78 @@
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes priceReveal {
+    0% { opacity: 0; transform: scale(0.8); }
+    50% { opacity: 0.5; transform: scale(1.05); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+  
+  @keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(74, 222, 128, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(74, 222, 128, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(74, 222, 128, 0.5); }
+  }
+  
+  /* Classes */
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  .animate-priceReveal {
+    animation: priceReveal 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  }
+  
+  .glow-effect {
+    animation: glow 3s infinite;
+  }
+  
+  .price-text {
+    text-shadow: 0 0 10px rgba(74, 222, 128, 0.7);
+    position: relative;
+  }
+  
+  .price-text::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(74, 222, 128, 0.7), transparent);
+  }
+  
+  .loading-dots span {
+    display: inline-block;
+    animation: pulse 1.5s infinite ease-in-out;
+    opacity: 0;
+  }
+  
+  .loading-dots span:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .loading-dots span:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  .loading-dots span:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+  
+  .form-group select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.3);
+  }
+  
+  /* Hover effects */
+  select:hover {
+    cursor: pointer;
+  }

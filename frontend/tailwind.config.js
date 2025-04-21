@@ -4,10 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#ffffff", // White background
-        secondary: "#f8f9fa", // Light gray
-        accent: "#e63946", // Red for highlights
-        text: "#333333", // Dark gray for readability
+        primary: '#6d28d9',  // Purple
+      secondary: '#06b6d4', // Cyan
+      dark: '#0f172a', // Dark gray for readability
       },
     },
   },

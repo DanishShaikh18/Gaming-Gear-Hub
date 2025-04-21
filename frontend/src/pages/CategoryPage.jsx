@@ -1,19 +1,45 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ProductSection from "../Components/ProductSection";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import ProductCard from "../Components/common/ProductCard";
 
-const CategoryPage = ({ title, products }) => {
+const CategoryPage = () => {
+  const { categoryName } = useParams();
+  const [products, setProducts] = useState([]);
+
+  // Map category names to IDs
+  const categoryMap = {
+    keyboards: 1,
+    mice: 2,
+    headsets: 3,
+    monitors: 4,
+  };
+
+  const categoryId = categoryMap[categoryName.toLowerCase()];
+
+  useEffect(() => {
+    if (!categoryId) return;
+
+    fetch(`/api/products?category=${categoryId}`)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("Fetched products:", data);
+        setProducts(data);  // Set the fetched products to state
+      })
+      .catch((err) => {
+        console.error("Failed to fetch products", err);
+      });
+  }, [categoryName]); // Fetch when categoryName changes
+
   return (
-    <div className="bg-primary text-text">
-      {/* Navbar (Fixed) */}
-      <div className="sticky top-0 left-0 w-full z-50">
-        <Navbar />
-      </div>
-      
-      {/* Page Content */}
-      <div className="pt-[70px] p-6 max-w-7xl mx-auto">
-        <h1 className="text-3xl font-bold text-accent mb-6">{title}</h1>
-        <ProductSection title={title} products={products} />
+    <div className="p-6">
+      <h2 className="text-2xl font-bold mb-6 capitalize text-white">
+        {categoryName} Products
+      </h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
       </div>
     </div>
   );
