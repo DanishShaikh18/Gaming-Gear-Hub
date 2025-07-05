@@ -5,27 +5,27 @@
 > 🛠 Built using **React**, **Flask**, and **PostgreSQL**---
 
 ## 🧩 Project Structure
+```
 Gaming-Gear-Hub/
 ├── backend/ → Flask + PostgreSQL (venv-based API)
 ├── gaming-gear-admin/ → React Admin Panel (Tailwind CSS)
 └── main-frontend/ → Main Website (React + Tailwind CSS)
+```
 ---
 
 ## 📸 UI Previews
 
-## 📷 Preview
-
 ### 🖥️ Main Website Home
-![Home Screenshot](./screenshots/home.png)
+![Home Screenshot](./image.png)
 
 ###🎮 Game Requirements
-![Setup Builder Screenshot](./screenshots/setup-builder.png)
+![Setup Builder Screenshot](./image4.png)
 
-### 📦 Product Listing
-![Product Listing Screenshot](./screenshots/products.png)
+### 📦 Products
+![Product Listing Screenshot](./image2.png)
 
 ### ⚙️ Review Section
-![Admin Panel Screenshot](./screenshots/admin-dashboard.png)
+![Admin Panel Screenshot](./image5.png)
 
 ---
 
