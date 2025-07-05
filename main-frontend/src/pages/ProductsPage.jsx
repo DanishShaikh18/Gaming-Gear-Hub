@@ -31,25 +31,26 @@ const ProductsPage = () => {
 
   return (
     
-    <section className="py-16 bg-gray-900 text-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 font-['Rajdhani'] text-center">
-          Products
-        </h2>
+    <section className="py-8 bg-black-900 text-white">
+  <div className="container mx-auto px-2 sm:px-4">
+    <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-['Rajdhani'] text-center">
+  
+    </h2>
 
-        {loading ? (
-          <p className="text-center text-lg">Loading products...</p>
-        ) : products.length === 0 ? (
-          <p className="text-center text-lg">No products found in this category.</p>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {products.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        )}
+    {loading ? (
+      <p className="text-center text-lg">Loading products...</p>
+    ) : products.length === 0 ? (
+      <p className="text-center text-lg">No products found in this category.</p>
+    ) : (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
       </div>
-    </section>
+    )}
+  </div>
+</section>
+
   );
 };
 

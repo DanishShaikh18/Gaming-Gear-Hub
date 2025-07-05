@@ -115,6 +115,7 @@ const AddProductForm = ({ onCancel }) => {
             <option value="2">Mice</option>
             <option value="3">Headsets</option>
             <option value="4">Monitors</option>
+            <option value="5">Controller</option>
           </select>
 
           <div className="mt-4">

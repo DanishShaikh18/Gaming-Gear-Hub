@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation, useNavigationType } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import CategoryGrid from './components/CategoryGrid'
 import front_video from './assets/front_video2.mp4'
@@ -16,38 +16,34 @@ import ProductsPage from './pages/ProductsPage'
 import PCBuilderForm from './components/PCBuilderForm'
 import SetupBuilderBanner from './components/SetupBuilderBanner'
 import PcEstimator from './pages/PcEstimator'
+import PopularProducts from './components/PopularProducts'
+import SpecialOffer from './components/SpecialOffer'
+import ReviewCarousel from './components/ReviewCarousel'
+import ScrollRestoration from './components/ScrollRestoration' // ✅
+
 const Home = () => (
   <>
-    {/* <Navbar /> */}
-    {/* <video
-      src={front_video}
-      autoPlay
-      loop
-      muted
-      className="w-full h-[80vh] object-cover"
-    /> */}
-    {/* <FeaturedCarousel/> */}
-
     <div className="relative">
       <FeaturedCarousel />
       <Navbar />
     </div>
-
-
     <TrendingProduct />
-    <SetupBuilderBanner/>
-    <CategoryGrid />
     <BudgetBanner />
-    {/* <TopBrandsCarousel></TopBrandsCarousel> */}
-    <GameRequirementBanner/>
-      <Footer/>
-    
+    <CategoryGrid />
+    <GameRequirementBanner />
+    <PopularProducts />
+    <SpecialOffer />
+    <SetupBuilderBanner />
+    {/* <TopBrandsCarousel /> */}
+    <ReviewCarousel />
+    <Footer />
   </>
 )
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-zinc-950 text-white font-sans">
+    <div className="min-h-screen bg-black text-white font-sans">
+      <ScrollRestoration /> {/* ✅ Move here, outside Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/budget-recommendations" element={<BudgetRecommendations />} />

@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 const SetupBuilderBanner = () => {
   return (
     <section
-      className="relative py-16 text-white px-6 overflow-hidden"
+      className="relative h-[510px] py-18 text-white px-6 overflow-hidden"
       style={{
-        background: 'linear-gradient(to left, #ff1e56, #000000)',
+        background: 'linear-gradient(to left, #14472A, #000000)',
       }}
     >
-      {/* Gaming PNG image */}
-      <div className="absolute inset-y-0 right-0 w-[45%] hidden md:block z-0">
+      {/* Gaming PNG image - Modified */}
+      <div className="absolute inset-y-0 right-0 w-[100%] md:w-[90%] lg:w-[85%] xl:w-[80%] hidden md:block z-0">
         <img
           src="https://geekscallout.co.uk/wp-content/uploads/2020/05/kindpng_1141440.png"
           alt="Gaming PC"
-          className="h-full w-full object-contain object-right"
+          className="h-full w-full object-contain object-right scale-90 origin-right"
         />
       </div>
 

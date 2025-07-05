@@ -23,17 +23,17 @@ const TrendingProducts = () => {
 
   if (loading) {
     return (
-      <section className="py-16 bg-gray-900 text-center text-white">
+      <section className="py-16 bg-black text-center text-white">
         Loading trending products...
       </section>
     );
   }
 
   return (
-    <section className="py-16 bg-gray-800">
+    <section className="py-16 bg-black">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#5be018f3] mb-12 text-center font-['Rajdhani']">
-          TRENDING PRODUCTS
+        <h2 className="text-3xl md:text-4xl font-bold text-[#fefefef3] mb-12 text-center font-['Rajdhani']">
+          <span className='text-[#52D421]'>TRENDING</span> PRODUCTS
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-16">
@@ -112,13 +112,13 @@ const TrendingProducts = () => {
             rgba(144, 238, 144, 0.2)
           );
           transform: rotate(-45deg);
-          transition: all 0.5s ease;
+          transition: all 0.8s ease;
           opacity: 0;
         }
 
         .holographic-card:hover {
           transform: scale(1.05);
-          box-shadow: 0 0 15px rgba(144, 238, 144, 0.6);
+          box-shadow: 0 0 45px rgba(144, 238, 144, 0.6);
         }
 
         .holographic-card:hover::before {

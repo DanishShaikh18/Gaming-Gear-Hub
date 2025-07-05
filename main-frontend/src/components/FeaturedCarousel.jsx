@@ -9,8 +9,8 @@ const featuredItems = [
     subtitle: "Green Ghost Gamepad",
     image: "https://fdn.gsmarena.com/imgroot/news/23/09/black-shark-september-global-launch-accessories/inline/-1200/gsmarena_003.jpg",
     cta: "SHOP NOW",
-    link: "https://www.amazon.com/Black-Shark-Gamepad-Controller-Smartphones/dp/B0B5NQNQ9Z",
-    colorScheme: "bg-[linear-gradient(to_right,black_0%,rgba(0,0,0,0.95)_10%,rgba(0,0,0,0.85)_20%,rgba(0,0,0,0.7)_35%,rgba(0,0,0,0.5)_50%,rgba(0,0,0,0.3)_65%,rgba(0,0,0,0.1)_80%,transparent_95%)]"
+    link: "https://blackshark.gg/products/black-shark-green-ghost-gamepad",
+    colorScheme: "bg-[linear-gradient(to_right,black_0%,rgba(0,0,0,0.95)_10%,rgba(0,0,0,0.85)_30%,rgba(0,0,0,0.7)_35%,rgba(0,0,0,0.5)_50%,rgba(0,0,0,0.3)_65%,rgba(0,0,0,0.1)_80%,transparent_95%)]"
   },
   {
     id: 2,
@@ -18,25 +18,25 @@ const featuredItems = [
     subtitle: "For the Next Big Creator",
     image: "https://s3-alpha-sig.figma.com/img/4e6f/c4f6/a536f95d35cc081f4931ab42c45fb424?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Iwhxm7abvNIbvbrfMaFyicfSLXHhqGcMTzLy-EM2NLCXG4RZuMq6mZEbqx7QeagCKpZPdajBEIAQPj5ygRIbaUSYfuUq0MNMQJFdLEquqw4tuMSbVWeCzNCY8oU~iS5~VtiFnQDBqIAVIGOZ9~EoWujrN5NEhIPJwo9QdLCkku74u1wLNjONn8aHbkSvRI9lvHUhhRsKYqyg1M6oopoY5dMMS2LkarehjGDnj8oJLvyKGL5KB01A7W-6jNDktTbYyUxOTe3w2pZ6NfA4jRwtymVAS6yD3Mfbvo1Z4Rk4pijAFcLf~HQvFzi-umqq0gitiqNgC0vKcLRnFny0I66kVA__",
     cta: "EXPLORE",
-    link: "#",
+    link: "https://www.amazon.in/Sony-CFI-2008A01X-PlayStation%C2%AE5-Console-slim/dp/B0CY5HVDS2",
     colorScheme: "from-black-600/90 to-black/0"
   },
   {
     id: 3,
-    title: "PRO PC SETUP",
-    subtitle: "Maxed Performance Gear",
-    image: "https://wallpapers.com/images/hd/gaming-pc-setup-4032-x-3024-wallpaper-6l7wr0g4kd5oyusc.jpg",
+    title: "Play in Comfort",
+    subtitle: "Elevate Your Game & Comfort!",
+    image: "https://s3-alpha-sig.figma.com/img/f435/75bc/abab81a4141f9d008a83e4eb25c65785?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=eTlvUSJnBtWFVj6G3tuKov4l5va~9VwgfECq3k7g--6WbC7qm3wQCseFt34lVTbaOth4jthPkF00wXcfbAj2PuLQBOfo9NwSMW4Do1L2FihAg-qGWKSf1mkWu3qNikNBMLccsdZI-Gg93fH37qSLXliqcNmVOAKjK81cy5lvcAgyuyvv9JQs4LmL4yzM5hlZ1mMI~R1dO6YIcV~LG1dmmfUrRqT8xeMXrdBOKX4AUNw44YdJlyVM0YIB3GNmSnk0XedUd17MQyCop2eQZU6gBLzBGUA~NHVTRwFGVXedL7DOniykrP0S7gv0dmbt1u5kRGyZhSA~3oPXg5sEUWWikQ__",
     cta: "DISCOVER",
-    link: "#",
-    colorScheme: "from-red-900/90 to-black-500/0"
-  },
+    link: "https://www.desertcart.in/products/58204880-arozzimilano-ergonomic-computer-gaming-office-chair-with-swivel-tilt-rocker-adjustable-height-and-adjustable-lumbar-support-red",
+    colorScheme: "bg-[linear-gradient(to_right,rgba(145, 17, 18, 1)_0%,rgba(145, 17, 18, 1)_15%,rgba(145, 17, 18, 1)_30%,rgba(145, 17, 18, 1)_50%,rgba(9,18,36,0)_85%)]"
+},
   {
     id: 4,
-    title: "Artic Fox",
+    title: "H9 Flow",
     subtitle: "Not just white— white-hot.",
     image: "https://s3-alpha-sig.figma.com/img/e086/bab2/d650e8a834daa23daeb87e5cc2ea78f4?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=rT61pHa-rxRw28et-Et4wAiPv5Pe6beHNSYD3t66sUodMzkMZ2-Ys94tDyZRBzQjIQT6p2shHgy-uDPjDRd6BjOqQ17EmyAQGQqYx7IOvVWlJMEVqmdeBxGrlGE6mtLSY7KA6Sep~l1-rNx~1ccjXNu7mmnKgUpkT856~f1593O~B52752mnuPwo2kb7Sf6bEYid257pBKKvQZ22-CErfa5JQIuXcbT1nyHCE~DlIPGWYkbgPCZoMGvNmRBQTlXvxC1mcFTf3Tv-zF5yW0YcFCi29RMM8gkb3EuPgSbC8dhlXkHiyqEEuxhpFIudXw5okg~Nr~O~RAk~avcE0aiEWg__",
     cta: "VIEW NOW",
-    link: "#",
+    link: "https://nzxt.com/product/h9-flow",
     colorScheme: "bg-[linear-gradient(to_right,rgba(9,18,36,1)_0%,rgba(9,18,36,0.95)_15%,rgba(9,18,36,0.85)_30%,rgba(9,18,36,0.7)_50%,rgba(9,18,36,0)_85%)]"
   },
   {
@@ -45,7 +45,7 @@ const featuredItems = [
     subtitle: "Gear Trusted by Pros",
     image: "https://s3-alpha-sig.figma.com/img/1b73/f377/a4a3a864988a89c147731850414e0fc8?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ttiwZOdWxeS~cVzKqPzw7~kZE6KkpFDKZha92yk1m~oIrklDxOXLOCZUcYsezzLywwJ7m3LaHwmSSvpaISIDtkM9SjXqbJ3p1tXaN7QrBWD-leR~vMfQUPxGBuXi8PLiYw-5L5w3tG1hARpnTzqeRHAeINm7sAQNeaq~TVa3Eh9uhpGXz4FhH34WrqIB55DH5rP~mc-erNLZjYP4T-b9fnmPeVKd525rx3F3I5KINmZVXMRKSWNKMy7yiyKP7yU63lmKVH8rmRXn2g6w3Uw8bAP7eyCPRtKjjNMfXFN7hXyGS3IINwVL6m-2y341lSkl~iTF-OsMNp7Sv8mEAI-VMw__",
     cta: "CHECK IT OUT",
-    link: "#",
+    link: "https://oyunekipman.com/shop/headphones/onyx-predator-2/",
     colorScheme: "from-black/90 "
   }
 ];
@@ -61,7 +61,7 @@ const FeaturedCarousel = () => {
     timeoutRef.current = setTimeout(() => {
       setDirection(1);
       setCurrentIndex((prev) => (prev + 1) % featuredItems.length);
-    }, 2000);
+    }, 20000);
 
     return () => clearTimeout(timeoutRef.current);
   }, [currentIndex]);

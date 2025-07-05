@@ -84,7 +84,7 @@ def get_db_connection():
 def connection_maintainer():
     """Maintain connection pool health"""
     while True:
-        time.sleep(600)  # Run every 5 minutes
+        time.sleep(6000)  # Run every 5 minutes
         if db_pool:
             try:
                 conn = db_pool.getconn()

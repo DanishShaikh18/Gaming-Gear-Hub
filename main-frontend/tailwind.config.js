@@ -10,6 +10,7 @@ module.exports = {
         glow: '0 0 8px rgba(168, 85, 247, 0.7)',
       },
       fontFamily: {
+        outfit: ['"Outfit"', 'sans-serif'],
         sans: ['"Segoe UI"', 'Roboto', 'sans-serif'],
         rajdhani: ['Rajdhani', 'sans-serif'],
       },
