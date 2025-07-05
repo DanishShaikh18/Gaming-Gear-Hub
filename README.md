@@ -16,7 +16,7 @@ Gaming-Gear-Hub/
 ## 📸 UI Previews
 
 ### 🖥️ Main Website Home
-![Home Screenshot](./image.png)
+![Home Screenshot](./image.jpg)
 
 ###🎮 Game Requirements
 ![Setup Builder Screenshot](./image4.png)
